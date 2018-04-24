@@ -119,6 +119,9 @@ public class BLEFindService {
             }
             BLEOpenNotification bleOpenNotification = new BLEOpenNotification(bleManage);
             bleOpenNotification.openNotification();
+            return;
         }
+        BLEWriteData bleWriteData = new BLEWriteData(bleManage);
+        bleWriteData.writeData();
     }
 }
